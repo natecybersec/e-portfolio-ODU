@@ -1,0 +1,173 @@
+html, body {
+    margin: 0;
+    padding: 0;
+}
+
+#navbar {
+    background-color: rgba(0,0,0,0.75);
+    position: relative;
+}
+
+/* HOME PAGE SECTION */
+
+.home-bgimg {
+    position: fixed;
+    height: 100%;
+    width: 100%;
+}
+
+#welcometext-bg {
+    background-color: #2F4C73;
+    width: 600px;
+    height: 300px;
+    opacity: 0.85;
+}
+
+/* HOME PAGE SECTION - END */
+
+/* JOURNALS SECTION */
+
+.journals-bgimg {
+    position: fixed;
+    height: 100%;
+    width: 100%;
+    background: #D9D6D0;
+}
+
+/* JOURNALS SECTION - END */
+
+/* ARTICLE REVIEW SECTION */
+
+.articles-bgimg {
+    position: fixed;
+    height: 100%;
+    width: 100%;
+    background: #D9D6D0;
+}
+
+/* ARTICLE REVIEW SECTION - END */
+
+/* ABOUT ME SECTION */
+
+.about-bgimg {
+    position: fixed;
+    height: 100%;
+    width: 100%;
+    filter: brightness(25%)
+}
+
+#portrait {
+    width: 200px;
+    height: 200px;
+    border: 4px solid white;
+    margin-block: -150px;
+    
+}
+
+#about-h1 {
+    color: white;
+    font-family: 'Helvetica', sans-serif;
+}
+
+#about-text {
+    color: white;
+    margin-block: 100px;
+    max-width: 30em;
+}
+
+svg {
+    width: 35px;
+    height: 35px;
+    color: #cccccc;
+    margin-block: 200px;
+    transition: all 0.4s ease-in-out; 
+}
+
+svg:hover {
+    color: #ffffff;
+}
+
+/* ABOUT ME SECTION - END */
+
+
+/* DEVELOPMENTENV CSS 
+html, .page {
+    margin: 0;
+    padding: 0;
+}
+
+#copyright {
+		color: white;
+		position: absolute;
+		bottom: 0;
+		left: 0;
+		right: 0;
+}
+
+span {
+		color: white !important;
+		position: absolute;
+		bottom: 0;
+		left: 0;
+		right: 0;
+}
+
+.home-bgimg {
+    position: fixed;
+    height: 100%;
+    width: 100%;
+}
+
+.journals-bgimg {
+    position: fixed;
+    height: 100%;
+    width: 100%;
+    background: linear-gradient(to right, #404864, #20242e);
+}
+
+#journalposts {
+		position: relative;
+}
+
+#articleposts {
+		position: relative;
+}
+
+.articles-bgimg {
+    position: fixed;
+    height: 100%;
+    width: 100%;
+    background: linear-gradient(to bottom right, #29593d, #348368);
+}
+
+
+#welcometext-bg {
+    background-color: #2F4C73;
+    width: 600px;
+    height: 300px;
+    opacity: 0.85;
+}
+
+
+
+-----------------------------
+Removal of site elements.
+-----------------------------
+
+.search-field {
+	visibility: hidden;
+}
+
+.search-submit {
+	display: none;
+}
+
+#header {
+		display: none;
+}
+
+.entry-title {
+		display: none;
+}
+
+*/
