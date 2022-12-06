@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="styles.css">
+    <title>Document</title>
+</head>
+
+<body>
+    <header>
+        <div class="logo"><a href="index.html">Nathaniel Carter | Portfolio</a></div>
+        <nav>
+            <ul>
+                <li><a href="">About Me</a></li>
+                <li><a href="">Resume</a></li>
+                <li class="dropdown">
+                    <button onclick="showDropdown()" class="dropbtn">Curriculum <svg xmlns="http://www.w3.org/2000/svg"
+                            width="12" height="12" fill="currentColor" class="bi bi-caret-down-fill"
+                            viewBox="0 0 16 16">
+                            <path
+                                d="M7.247 11.14 2.451 5.658C1.885 5.013 2.345 4 3.204 4h9.592a1 1 0 0 1 .753 1.659l-4.796 5.48a1 1 0 0 1-1.506 0z" />
+                        </svg>
+                    </button>
+                    <div id="Dropdown" class="dropdown-content">
+                        <a href="CYSE201S.html">CYSE 201S</a>
+                        <a href="CYSE200T.html">CYSE 200T</a>
+                    </div>
+                </li>
+            </ul>
+        </nav>
+    </header>
+
+    <div class="class-container">
+        <h1 class="class-title large-text">CYSE 200T</h1>
+    </div>
+     <!-- Copy and paste div starting with assignment-container for new entries. -->
+
+    <button onclick="showJournals()" class="assignment-dropbtn large-text">Journals
+        <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-caret-down-fill"
+            viewBox="0 0 16 16">
+            <path
+                d="M7.247 11.14 2.451 5.658C1.885 5.013 2.345 4 3.204 4h9.592a1 1 0 0 1 .753 1.659l-4.796 5.48a1 1 0 0 1-1.506 0z" />
+        </svg>
+    </button>
+    <div class="assignment-container journal-dropdown">
+        <ul>
+            <li><span class="assignment-title large-text bold">Week 1</span></li>
+            <li>
+                <p class="assignment-body primary-text">
+                    Lorem ipsum dolor sit amet consectetur, adipisicing elit. Magni explicabo ratione vitae quis magnam
+                    cumque harum nihil molestiae ea? Voluptates maxime aut dignissimos esse minima voluptatibus
+                    quibusdam porro totam magnam.
+                </p>
+            </li>
+        </ul>
+    </div>
+    <div class="assignment-container journal-dropdown">
+        <ul>
+            <li><span class="assignment-title large-text bold">Week 1</span></li>
+            <li>
+                <p class="assignment-body primary-text">
+                    Lorem ipsum dolor sit amet consectetur, adipisicing elit. Magni explicabo ratione vitae quis magnam
+                    cumque harum nihil molestiae ea? Voluptates maxime aut dignissimos esse minima voluptatibus
+                    quibusdam porro totam magnam.
+                </p>
+            </li>
+        </ul>
+    </div>
+
+    <button onclick="showArticles()" class="assignment-dropbtn large-text">Articles
+        <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-caret-down-fill"
+            viewBox="0 0 16 16">
+            <path
+                d="M7.247 11.14 2.451 5.658C1.885 5.013 2.345 4 3.204 4h9.592a1 1 0 0 1 .753 1.659l-4.796 5.48a1 1 0 0 1-1.506 0z" />
+        </svg>
+    </button>
+    <div class="assignment-container article-dropdown">
+        <ul>
+            <li><span class="assignment-title large-text bold">Article 1</span></li>
+            <li>
+                <p class="assignment-body primary-text">
+                    Lorem ipsum dolor sit amet consectetur, adipisicing elit. Magni explicabo ratione vitae quis magnam
+                    cumque harum nihil molestiae ea? Voluptates maxime aut dignissimos esse minima voluptatibus
+                    quibusdam porro totam magnam.
+                </p>
+            </li>
+        </ul>
+    </div>
+    <div class="assignment-container article-dropdown">
+        <ul>
+            <li><span class="assignment-title large-text bold">Article 2</span></li>
+            <li>
+                <p class="assignment-body primary-text">
+                    Lorem ipsum dolor sit amet consectetur, adipisicing elit. Magni explicabo ratione vitae quis magnam
+                    cumque harum nihil molestiae ea? Voluptates maxime aut dignissimos esse minima voluptatibus
+                    quibusdam porro totam magnam.
+                </p>
+            </li>
+        </ul>
+    </div>
+
+
+
+
+
+    <script src="dropdown.js"></script>
+</body>
+
+</html>
