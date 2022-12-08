@@ -21,6 +21,11 @@ function showArticles() {
     }
 }
 
+// Career Paper drop down
+function showCareerPaper() {
+    document.getElementById("paper-dropdown").classList.toggle("show");
+}
+
 // Exclusive to navbar for right now - if clicked outside navbar dropdown button, hide.
 window.onclick = function(event) {
     if (!event.target.matches('.dropbtn')) {
