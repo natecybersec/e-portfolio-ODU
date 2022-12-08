@@ -1,0 +1,309 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;700&display=swap');
+
+:root {
+    --darkgrey: #151515;
+    --yellow: #F3E600;
+    --bold: 900;
+}
+
+
+html, body {
+    margin: 0;
+    padding: 0;
+    width: 100%;
+    height: 100%;
+    background-color: var(--darkgrey);
+}
+
+.primary-text {
+    color: white;
+    font-family: 'Inter', sans-serif;
+}
+
+.large-text {
+    font-family: 'Inter', sans-serif;
+    font-weight: var(--bold);
+    font-size: 1.5em;
+}
+
+.bold {
+    font-weight: var(--bold);
+}
+
+.large-logo {
+    max-width: 200px;
+    max-height: 200px;
+}
+
+/* navigation */
+
+header {
+    text-align: center;
+    width: 100%;
+    height: 5%;
+}
+
+.logo {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 1em;
+}
+
+.logo a {
+    text-decoration: none;
+    color: white;
+    font-family: 'Inter', sans-serif;
+    font-weight: 700;
+    font-size: 1.5rem;
+}
+
+.logo a:hover {
+    text-decoration: underline;
+}
+
+nav {
+    text-align: center;
+}
+
+nav ul {
+    margin: 0;
+    padding: 0;
+    list-style-type: none;
+    position: relative;
+}
+
+nav li {
+    margin-bottom: 1em;
+    margin-left: 1em;
+}
+
+nav a {
+    color: white;
+    text-decoration: none;
+    font-family: 'Inter', sans-serif;
+    font-weight: 400;
+    font-size: 1.2rem;
+}
+
+nav a:hover {
+    text-decoration: underline;
+}
+
+.dropdown {
+    position: relative;
+    display: inline-block;
+}
+
+.dropbtn {
+    background-color: var(--darkgrey);
+    border: none;
+    color: white;
+    font-size: 1.2rem;
+    font-family: 'Inter', sans-serif;
+    text-align: center;
+    cursor: pointer;
+}
+
+.dropbtn:hover {
+    text-decoration: underline;
+}
+
+.dropdown-content {
+    display: none;
+    position: absolute;
+    background-color: white;
+    min-width: 120px;
+    z-index: 1;
+}
+
+.dropdown-content a {
+    color: black;
+    padding: 8px 8px;
+    text-decoration: none;
+    display: block;
+}
+
+#home-intro {
+    width: 100%;
+    height: 75%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+#home-text {
+    margin: 30px;
+    text-align: center;
+}
+
+#home-logo {
+    text-align: center;
+}
+
+
+.contact-container {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 20%;
+}
+
+.contact-container p {
+    border-bottom: white 1px solid;
+}
+
+.contact-container a {
+    opacity: 75%;
+}
+
+.contact-container a:hover {
+    opacity: 100%;
+}
+
+/* ASSIGNMENTS STYLING */
+
+.class-container {
+    display: inline-block;
+    width: 100%;
+    margin-top: 50%;
+}
+
+.class-title {
+    text-align: center;
+    color: white;
+    font-size: 2em;
+}
+
+.assignment-dropbtn {
+    width: 100%;
+    height: 50px;
+    text-align: left;
+    background-color: white;
+    color: var(--darkgrey);
+    border: 1px solid var(--darkgrey);
+    cursor: pointer;
+}
+
+.assignment-dropbtn:hover {
+    text-decoration: underline;
+    background-color: var(--yellow);
+}
+
+.assignment-dropbtn svg {
+    padding-top: 7px;
+    float: right;
+}
+
+.assignment-container {
+    width: 100%;
+    display: none;
+}
+
+.assignment-container ul {
+    list-style-type: none;
+    padding: 0;
+    margin-left: 7px;
+    margin-right: 7px;
+}
+
+.assignment-title {
+    color: white;
+}
+
+.assignment-container img {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 10px;
+    width: 75%;
+    height: 25%;
+    border: 1px solid white;
+}
+
+/* About Me page */
+
+.about-main-container {
+    display: grid;
+    place-items: center;
+    align-content: center;
+    min-height: 90%;
+}
+
+/* Resume page */
+
+.resume-main-container {
+    /* Change all of this. */
+    display: grid;
+    place-items: center;
+    align-content: center;
+    min-height: 90%;
+}
+
+@media screen and (min-width: 900px) {
+    header {
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+    }
+
+    nav {
+        display: flex;
+        align-items: center;
+    }
+
+    nav ul {
+        display: flex;
+    }
+
+    nav li {
+        margin-left: 3em;
+        margin-right: 2em;
+        margin-bottom: 0;
+    }
+
+    #home-intro {
+        width: 85%;
+        flex-direction: row;
+    }
+
+    .primary-text {
+        font-size: 1.2rem;
+    }
+
+    #home-text {
+        padding: 100px;
+        border-right: white solid 1px;
+    }
+
+    #home-logo {
+        padding-left: 60px;
+    }
+
+    .class-container {
+        margin-top: 5%;
+    }
+
+    .class-title {
+        font-size: 4em;
+    }
+
+    .assignment-dropbtn {
+        padding-left: 20px;
+        padding-right: 20px;
+        text-align: center;
+    }
+
+    .assignment-container ul {
+        margin-left: 21px;
+        margin-right: 21px;
+    }
+}
+
+
+
+.show {
+    display: block;
+}

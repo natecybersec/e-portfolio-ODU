@@ -1,0 +1,467 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="styles.css">
+    <script src="dropdown.js"></script>
+    <title>E-Portfolio | CYSE201S</title>
+</head>
+
+<body>
+    <header>
+        <div class="logo"><a href="index.html">Nathaniel Carter | Portfolio</a></div>
+        <nav>
+            <ul>
+                <li><a href="about.html">About Me</a></li>
+                <li><a href="resume.html">Resume</a></li>
+                <li class="dropdown">
+                    <button onclick="showDropdown()" class="dropbtn">Curriculum <svg xmlns="http://www.w3.org/2000/svg"
+                            width="12" height="12" fill="currentColor" class="bi bi-caret-down-fill"
+                            viewBox="0 0 16 16">
+                            <path
+                                d="M7.247 11.14 2.451 5.658C1.885 5.013 2.345 4 3.204 4h9.592a1 1 0 0 1 .753 1.659l-4.796 5.48a1 1 0 0 1-1.506 0z" />
+                        </svg>
+                    </button>
+                    <div id="Dropdown" class="dropdown-content">
+                        <a href="CYSE201S.html">CYSE 201S</a>
+                        <a href="CYSE200T.html">CYSE 200T</a>
+                    </div>
+                </li>
+            </ul>
+        </nav>
+    </header>
+
+    <div class="class-container">
+        <h1 class="class-title large-text">CYSE 201S</h1>
+    </div>
+    <!-- Copy and paste div starting with assignment-container for new entries. -->
+
+    <button onclick="showJournals()" class="assignment-dropbtn large-text">Journals
+        <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-caret-down-fill"
+            viewBox="0 0 16 16">
+            <path
+                d="M7.247 11.14 2.451 5.658C1.885 5.013 2.345 4 3.204 4h9.592a1 1 0 0 1 .753 1.659l-4.796 5.48a1 1 0 0 1-1.506 0z" />
+        </svg>
+    </button>
+    <div class="assignment-container journal-dropdown">
+        <ul>
+            <li><span class="assignment-title large-text bold">Week 1: Review the NICE Framework. Are there certain
+                    areas that
+                    you would want to focus your career on? Explain which areas would
+                    appeal the most to you and which would appeal the least.</span></li>
+            <li>
+                <p class="assignment-body primary-text">
+                    Focusing your skills in cybersecurity is incredibly important because the field is vast and
+                    expansive, and will only continue to keep expanding. Thus, it may be easier to hone your
+                    edge at a select few areas. The NICE framework lays out a beneficial guide to these areas
+                    and the jobs within them that need to be filled. There are three areas that I am most
+                    interested in: Analyze, Collect and Operate, and Investigate. First, within the Analyze
+                    area, exploitation/threat analysis seems very enticing me. Collecting data and studying the
+                    ways in which systems are vulnerable, or become vulnerable, seems like a great way to learn
+                    and gain experience in the industry. Second, within the Collect and Operate area, cyber
+                    operations is appealing to me because it feels very hands-on, and in my opinion that is one
+                    of the best ways to grow in anything. That is also where I feel a lot of work actually gets
+                    done, and the reward is very clear. Last, in the Investigate section, Digital Forensics has
+                    always enticed me ever since I first heard about it, due to the fact that you’re actively
+                    helping solve crime cases. The three areas that I wouldn’t explicitly look to join would be
+                    Operate and Maintain, Oversee and Govern, and Securely Provision. First, specifically in
+                    Operate and Maintain, customer service and tech support do not excite me at all due to the
+                    fact that I’m not a very good communicator in the moment, and that type of work requires you
+                    to be very stoic and clear-headed, and that doesn’t really fit my personality very well.
+                    Second, within Oversee and govern, training and educating people doesn’t speak to me because
+                    I do not view myself as the educator type. Last, within Securely Provision, testing and
+                    evaluating products or services seems to be a very mundane career, and I feel like I would
+                    get bored with that line of work very quickly, and become disinterested.
+                </p>
+            </li>
+        </ul>
+    </div>
+    <div class="assignment-container journal-dropdown">
+        <ul>
+            <li><span class="assignment-title large-text bold">Week 2: Explain how the principles of science relate to
+                    cybersecurity.</span></li>
+            <li>
+                <p class="assignment-body primary-text">
+                    The principles of science relate to cybersecurity in a variety of ways, including the
+                    scientific method, collecting data and analyzing it, and sharing newfound knowledge with the
+                    community. Cybersecurity experts use the scientific method every day, whether or not they
+                    realize it. Theorizing how a certain system or software is vulnerable, and testing that
+                    theory by performing a hack is very similar to drafting a hypothesis and then testing it.
+                    The collection of data and analyzing that data is also extremely important to the field of
+                    cybersecurity, including those who specialize in packet analysis or incident response.
+                    Lastly, sharing gained knowledge is extremely important as it is in the field of science
+                    because it helps to keep regular users in the loop, as well as educate experts on how to
+                    better protect their own systems.
+                </p>
+            </li>
+        </ul>
+    </div>
+    <div class="assignment-container journal-dropdown">
+        <ul>
+            <li><span class="assignment-title large-text bold">Week 3: Visit PrivacyRights.org to see the types of
+                    publicly available information
+                    about data breaches. How might researchers use this information to
+                    study breaches? Enter a paragraph in your journal.</span></li>
+            <li>
+                <p class="assignment-body primary-text">
+                    Researchers might use the information to study data breaches by looking at the common themes
+                    among them. If patterns are to be found, they can prove extremely useful in breaking the
+                    cycle and preventing more breaches in the future. Common vulnerabilities like stolen
+                    passwords, outdated software, or social engineering are all common patterns that a
+                    researcher might be able to prevent in the future.
+                </p>
+            </li>
+        </ul>
+    </div>
+    <div class="assignment-container journal-dropdown">
+        <ul>
+            <li><span class="assignment-title large-text bold">Week 4: Review Maslow’s Hierarchy of Needs and explain
+                    how each level
+                    relates to your experiences with technology. Give specific examples of
+                    how your digital experiences relate to each level of need. </span></li>
+            <li>
+                <p class="assignment-body primary-text">
+                    There are a multitude of digital experiences that have filled my needs as it relates to
+                    Maslow’s hierarchy of needs. For self-actualization, I’ve used digital technology as a
+                    creative outlet, as some of my hobbies now include 3D modeling and game development.
+                    Although, I don’t think I’ve realized my “full potential” in those outlets, but I feel that
+                    I still have plenty of time left to do so. For my esteem needs, I usually enjoy video games
+                    that allow you to progress as you play, and that progression gives me a feeling of
+                    accomplishment. Whether or not that’s considered “worthwhile”, that’s up to the individual
+                    in my opinion. For belonging needs, I use social media to talk to my friends regularly,
+                    something that I don’t think I could have done without it, as most of my friends live pretty
+                    far away from me. For safety needs, the fact that I can get alerts straight to my phone
+                    about bad weather is extremely beneficial, as well as the alarms in my house are all
+                    automated, so I don’t have to worry about not knowing if there is someone breaking into my
+                    house is also very nice. For physiological needs, I can order food and water with a click of
+                    a button from an app, and can also use apps to track how well I slept during the night,
+                    which meets those needs very well.
+                </p>
+            </li>
+        </ul>
+    </div>
+    <div class="assignment-container journal-dropdown">
+        <ul>
+            <li><span class="assignment-title large-text bold">Week 5: Review the articles linked with each individual
+                    motive. Rank the
+                    motives from 1 to 7 as the motives that you think make the most sense
+                    (being 1) to the least sense (being 7). Explain why you rank each
+                    motive the way you rank it. </span></li>
+            <li>
+                <p class="assignment-body primary-text">
+                    I rank the “political” motive number one because it makes the most sense out of all the
+                    motives, due to the fact that politics is extremely controversial by nature and such an area
+                    can turn anyone into an activist about anything if they dive in far enough. I rank the “for
+                    money” motive a close second, because money is an extremely valuable resource to literally
+                    everyone, and it does not come as a surprise at all that people may commit cybercrime for
+                    financial gain. I rank the “revenge” motive as third because those who might feel they’ve
+                    been egregiously wronged in some way might make drastic decisions as a result of that
+                    feeling. I rank the “recognition” motive fourth due to the fact that its very easy for the
+                    act of finding vulnerabilities to become a competition of sorts, and if you’re the first
+                    person to find a vulnerability, it’s a good demonstration of your hacking abilities for all
+                    to see. I rank the “multiple reasons” motive fifth, because while it’s definitely
+                    understandable that someone’s view of the world influences their decisions, there seems to
+                    be a stronger motive under that layer, like financial gain and political activism. I rank
+                    the “entertainment” motive sixth because while a lot of people partake in activities just
+                    for fun, another aspect of said activity allows people to willingly spend more time on it
+                    that is more enticing. An example from the article is that even thought he perpetrator said
+                    he did it for fun, he ended up auctioning off the data for money anyways. I rank the
+                    “boredom” motive last because from what I read in the article it didn’t really seem like a
+                    motive in the first place versus something that gets individuals caught in a trap. Even
+                    then, it seems like a little weak because boredom is just a symptom of an underlying problem
+                    that causes you to take action.
+                </p>
+            </li>
+        </ul>
+    </div>
+    <div class="assignment-container journal-dropdown">
+        <ul>
+            <li><span class="assignment-title large-text bold">Week 6: Can we create three fake websites and three real
+                    websites and ask
+                    them to spot what makes them fake?</span></li>
+            <li>
+                <p class="assignment-body primary-text">
+                    The average person might not be aware of the differences between a real website that they
+                    intend to use, and a malicious website that acts a front to gather information about an
+                    individual that intentionally appears legitimate. There are various differences in a fake
+                    website that should appear as red flags to a user. Firstly, the most common feature of a
+                    fake website is that the domain name may not appear correct. Even if a hacker has setup a
+                    website to look like an exact replica, the hacker cannot use the same domain name of the
+                    real one. Secondly, web browsers provide a symbol next to the URL that looks like a padlock
+                    or another related icon. Clicking on the icon allows you to view the digital certificate of
+                    the website, and almost all trustworthy sites will provide a legitimate certification to
+                    allow secure connections. If the padlock symbol has a warning sign on it, that may mean the
+                    digital certificate is not valid, and cannot be trusted. Lastly, if a user feels that they
+                    are not sure they have arrived at the correct website, either through a referral link from
+                    an email, or otherwise, the user can always manually go to the intended website themselves
+                    and perform the necessary activities from there. Users should look carefully at domain
+                    names, and ensure that they are spelled correctly, with no extra characters included to make
+                    the domain name appear legitimate. For example, a hacker looking to imitate
+                    ‘www.facebook.com’ may register the malicious address as ‘www.face.book.com’. If a URL does
+                    not appear to be spelled correctly, the user should not remain there. If a web browser warns
+                    you that a digital certificate could be not be validated, that may indicate that the website
+                    is unsafe, and users should take heed of said warnings.
+                </p>
+            </li>
+        </ul>
+    </div>
+    <div class="assignment-container journal-dropdown">
+        <ul>
+            <li><span class="assignment-title large-text bold">
+                    Week 7: Create a meme from a template photo and explain how your meme relates to Human Systems
+                    Integration.
+                </span></li>
+            <li>
+                <img src="images/Journal_7.jpg" alt="Journal seven meme.">
+                <p class="assignment-body primary-text">
+                    I had the idea from the original photo that if I gave it some more context it would look like the
+                    user is fed up with their phone, and they subsequently decided to lay it face down so they wouldn’t
+                    see the screen anymore. I decided to go with scam text messages, because they are big problem that
+                    are at best an annoyance to the user, and its an issue that phone companies are now trying to tackle
+                    with extreme prejudice. This meme relates to Human Systems Integration because scams like these are
+                    trying to exploit vulnerabilities in a human, and trick them into clicking links and giving away
+                    their information.
+                </p>
+            </li>
+        </ul>
+    </div>
+    <div class="assignment-container journal-dropdown">
+        <ul>
+            <li><span class="assignment-title large-text bold">
+                    Week 8: Write a journal entry about how you think the media influences our understanding about
+                    cybersecurity.
+                </span>
+            </li>
+            <li>
+                <p class="assignment-body primary-text">
+                    I think the media has skewed how we understand cybersecurity towards a more fantastical and
+                    dramatized point of view. Movies and television have taken a lot of creative liberties when
+                    showcasing the process of exploiting vulnerabilities in computer systems. I can definitely
+                    understand why though, since in actuality the process of finding and exploiting vulnerabilities is
+                    quite “boring”, most of the time. It’s bad enough for your audience to listen to jargon they don’t
+                    understand; it’s most likely worse to try and get them read jargon that appears nonsensical to the
+                    average person. Another creative liberty that is taken is the timeframe of performing a hack. I’d
+                    say 75% of hacking is reconnaissance, and it takes a lot of time. The total amount of time from
+                    performing reconnaissance to exploiting a vulnerability might add up to a least a day, if not more.
+                    It doesn’t happen within 60 seconds of your first encounter with a system.
+                </p>
+            </li>
+        </ul>
+    </div>
+    <div class="assignment-container journal-dropdown">
+        <ul>
+            <li><span class="assignment-title large-text bold">
+                    Week 9: Complete the Social Media Disorder scale. How did you score? What
+                    do you think about the items in the scale? Why do you think that
+                    different patterns are found across the world?
+                </span>
+            </li>
+            <li>
+                <p class="assignment-body primary-text">
+                    I scored a 3.0 on the Social Media Disorder Scale. I think that the items in the scale are accurate
+                    questions to ask when trying to figure out if someone has a disorderly relationship with their usage
+                    of social media. I think that different patterns are found across the world because of cultural
+                    differences. Most social media platforms were founded here in the United States, as well as the
+                    technology of the internet in general. That definitely plays a role in how our population’s social
+                    media usage is influenced. The internet, and especially phones, are vital to navigating society in
+                    many parts of the world, so it only makes sense that the parts of the world that don’t use their
+                    phones frequently are not influenced by social media usage.
+                </p>
+            </li>
+        </ul>
+    </div>
+    <div class="assignment-container journal-dropdown">
+        <ul>
+            <li><span class="assignment-title large-text bold">
+                    Week 10: Read this
+                    (https://www.armyupress.army.mil/Journals/Military-Review/English-Edition-Archives/Mar-Apr-2019/117-Cybersecurity/b/)
+                    and write a journal entry summarizing your response to the article on social cybersecurity.
+                </span>
+            </li>
+            <li>
+                <p class="assignment-body primary-text">
+                    Social cybersecurity has become an increasingly important part of national security and warfare. Due
+                    to the increasing reach of information provided by the internet, it’s strategic value in diplomacy
+                    and warfare has skyrocketed. The interconnectedness of the internet, social media, and other online
+                    resources has created a new way to conduct warfare, as well as a new way to protect national
+                    security. Social media can be used as a tool of disinformation to spread false or misleading
+                    information, or to target specific individuals or organizations. It can also be used to gather
+                    intelligence and to gain insights into the motivations and intentions of potential adversaries.
+                    Additionally, social media can be used to support offensive cyber operations, such as launching
+                    malware or other malicious code. Social cybersecurity has also enabled countries to better monitor
+                    and respond to threats, as well as to detect and prevent attacks. As the use of social media
+                    continues to grow, so too will the need for better and more sophisticated social cybersecurity
+                    measures. By leveraging the vast amount of data available on social media platforms, world
+                    governments and militaries can gain a better understanding of potential threats and vulnerabilities,
+                    as well as gain insight into the activities and intentions of adversaries. Social cybersecurity can
+                    also be used to monitor and disrupt malicious actors, particularly in the digital realm.
+                    Additionally, it can be used to track and analyze the spread of misinformation and disinformation
+                    campaigns, as well as to detect and prevent cyber-attacks. Social cybersecurity can also be used to
+                    provide intelligence on strategic issues such as the political and economic climate in a given
+                    region, which can be invaluable in making informed decisions. All in all, social cybersecurity has
+                    become essential for national security and warfare in the digital age.
+                </p>
+            </li>
+        </ul>
+    </div>
+    <div class="assignment-container journal-dropdown">
+        <ul>
+            <li><span class="assignment-title large-text bold">
+                    Week 11: Read this (https://dojmt.gov/wp-content/uploads/Glasswasherparts.com_.pdf) sample breach
+                    letter: “SAMPLE DATA BREACH NOTIFICATION”, and describe how two different economics theories and two
+                    different social sciences theories relate to the letter.
+                </span>
+            </li>
+            <li>
+                <p class="assignment-body primary-text">
+                    Neoclassical theory states that the customer decides prices due to supply and demand. This relates
+                    to the letter in question due to the fact that customer demand for a product made by a company may
+                    sharply drop due to events unrelated to the product, such as a cybersecurity breach that has exposed
+                    their private information. If customers lose faith that their payment information is safe with a
+                    business, they will most likely refuse to conduct further business with that organization. Keynesian
+                    economic theory makes the case that when in times of strife, “business pessimism” along with other
+                    market factors will increase the weakness of an economy. Business pessimism is an important idea, as
+                    it relates heavily to the above letter and business cybersecurity as a whole. Similar to my previous
+                    point, if a business’ customer base becomes pessimistic about the security of their information that
+                    is stored by a company, the result will be customers cutting ties with the company in search of
+                    safer business practices. The two social science theories that relate to this letter would be the
+                    functionalist and conflict perspectives. Functionalist theory states that society is built up of a
+                    web of relationships with numerous systems, and cybersecurity might turn out to be the most
+                    interconnected system within society. Conflict perspective states that society is built of different
+                    groups of different interests. If a customer base has a greater interest in the safety of their data
+                    and information than the group that runs a business, a cybersecurity incident would have a large
+                    impact on an organization.
+                </p>
+            </li>
+        </ul>
+    </div>
+    <div class="assignment-container journal-dropdown">
+        <ul>
+            <li><span class="assignment-title large-text bold">
+                    Week 12: Review what Andriy Slynchuk says and write a paragraph describing the five most serious
+                    violations and why you think those offenses are serious.
+                </span>
+            </li>
+            <li>
+                <p class="assignment-body primary-text">
+                    The five most serious violations would be “sharing passwords, addresses, or photos of others”,
+                    “collecting information about people younger than 13”, “recording a VoIP call without consent”,
+                    “using other people’s internet networks”, and “using copyrighted images”. Sharing passwords,
+                    addresses, or photos of others is a serious offense because it’s all information that is at the
+                    consent of an individual, and whoever shares it is stripping someone of their right to privacy.
+                    Collecting information about people younger than 13 is also a serious offense, because individuals
+                    younger than the age of 13 are not able to give consent to sharing information about themselves
+                    while understanding the consequences of such an action. Recording a VoIP call without consent is
+                    another serious offense, because it also an invasion of someone’s privacy. Almost everyone who uses
+                    a phone is under the assumption that what they say can be kept in relative confidentiality, and
+                    abusing that fact is morally wrong. Using other people’s internet networks without their knowledge
+                    or consent has numerous consequences for the owners of the network. If they pay by data usage, they
+                    could incur additional charges through no fault of their own. Any information shared over the
+                    internet could also be exposed, and exploited by a malicious user. Finally, using copyrighted images
+                    is an offense that affects lots of people’s livelihoods. Many individuals turn their photography
+                    into a business, and rely on purchases of their material to sustain a living, and copyrights are an
+                    important safeguard for them.
+                </p>
+            </li>
+        </ul>
+    </div>
+    <div class="assignment-container journal-dropdown">
+        <ul>
+            <li><span class="assignment-title large-text bold">
+                    Week 14: Complete the Patchin and Hinduja’s cyber bullying survey. After completing the survey,
+                    discuss how you think criminologists might use the surveys to explore relationships between the
+                    different items.
+                </span>
+            </li>
+            <li>
+                <p class="assignment-body primary-text">
+                    Criminologists can use cyber victimization surveys to explore the connections between people and the
+                    internet. These surveys involve collecting data on the frequency and types of cyber victimization an
+                    individual or group has experienced, such as identity theft, online harassment, or threats. This
+                    data can then be analyzed to identify correlations between individuals and the type of cyber
+                    victimization they experienced, as well as the potential factors that influence their victimization.
+                    This information can be used to understand the consequences of cyber victimization and how
+                    individuals feel about their online experiences, allowing for better protection for those at risk of
+                    cyber victimization.
+                </p>
+            </li>
+        </ul>
+    </div>
+
+
+    <!-- Articles Section -->
+    <button onclick="showArticles()" class="assignment-dropbtn large-text">Article Reviews
+        <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-caret-down-fill"
+            viewBox="0 0 16 16">
+            <path
+                d="M7.247 11.14 2.451 5.658C1.885 5.013 2.345 4 3.204 4h9.592a1 1 0 0 1 .753 1.659l-4.796 5.48a1 1 0 0 1-1.506 0z" />
+        </svg>
+    </button>
+    <div class="assignment-container article-dropdown">
+        <ul>
+            <li><span class="assignment-title large-text bold">
+                    Article 1: "Securing the Human: A Review of Literature on Broadening Diversity in Cybersecurity
+                    Education".
+                </span>
+            </li>
+            <li>
+                <p class="assignment-body primary-text">
+                    Securing the Human: A Review of Literature on Broadening Diversity in Cybersecurity Education
+                    demonstrates the opportunity to diversify the field of cybersecurity and the development of a
+                    diverse workforce of proficient computer scientists. This study includes interpretive data
+                    collection, through the method of observing and reviewing “literature concentrating on cybersecurity
+                    education initiatives for diversification”. There are three research questions present: “What is the
+                    current body of work concerning the diversification of the cybersecurity field”, “What are the gaps
+                    in education research for the diversification of the cybersecurity field”, and “What approaches are
+                    successful or unsuccessful in diversifying the cybersecurity field”. The study utilizes a variety of
+                    research methods, including “Open Literature Search Methodology”, “Focused Literature Search
+                    Methodology”, and “Coding Results”. The first phase, Open Literature Search Methodology, is defined
+                    in the study as “a broad review of literature based on standard approaches employed to increase
+                    participation in computing and cybersecurity”. Every member of the study’s working group formed a
+                    list of interventions to report on based on their experiences as educators. Each intervention was
+                    compared to evidence that had been studied heavily for its efficacy in Computer Science/STEM fields.
+                    The second phase, Focused Literature Search Methodology, involved a more specific group of keyword
+                    search terms in the ACM Digital Library, including terms like “cybersecurity diversity or
+                    under-representation or minorities”. All phases of the study used qualitative analysis to review the
+                    literature that was found. This study was effective at understanding cybersecurity through a social
+                    lens, as it highlighted the need for more guidelines for educators on how to foster a diverse
+                    educational community, in order to respond to the lack thereof. Overall, this study provided methods
+                    for educators to help entice and retain a diverse field of students who can join the cybersecurity
+                    field.
+                </p>
+            </li>
+        </ul>
+    </div>
+    <div class="assignment-container article-dropdown">
+        <ul>
+            <li><span class="assignment-title large-text bold">
+                    Article 2: "Developing Metrics to Assess the Effectiveness of Cybersecurity Awareness Programs".
+                </span>
+            </li>
+            <li>
+                <p class="assignment-body primary-text">
+                    “Developing Metrics to Assess the Effectiveness of Cybersecurity Awareness Programs” is a study that
+                    proposes a set of metrics to evaluate cybersecurity awareness programs, then apply those metrics by
+                    performing a literature review of 32 different papers. The best forms of cybersecurity involves
+                    every individual at every stage, not just the IT staff. Everyone in an organization can learn how to
+                    keep themselves and the organization that they represent safe from cyber-threats. The research
+                    questions that were focused on within the literature reviews included what factors each paper
+                    measured, as well how those factors were measured in relation to cybersecurity awareness. Along with
+                    the research questions, the researches applied the European Literacy Policy Network’s four
+                    indicators, which are: impact, sustainability, accessibility, and monitoring. The research methods
+                    that were used included a systematic literature review developed by researchers Webster and Watson
+                    and search services such as Google Scholar and Microsoft Academic. Evaluating these research papers
+                    for their effectiveness can contribute to marginalized members of society through providing
+                    accessibility to end users of all different backgrounds, not just technology-focused ones. Overall,
+                    this study provides a way for those who are developing cybersecurity awareness programs to enhance
+                    said programs.
+                </p>
+            </li>
+        </ul>
+    </div>
+</body>
+
+</html>

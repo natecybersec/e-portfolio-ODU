@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="styles.css">
+    <script src="dropdown.js"></script>
+    <title>E-Portfolio | About Me</title>
+</head>
+
+<body>
+    <header>
+        <div class="logo"><a href="index.html">Nathaniel Carter | Portfolio</a></div>
+        <nav>
+            <ul>
+                <li><a href="about.html">About Me</a></li>
+                <li><a href="resume.html">Resume</a></li>
+                <li class="dropdown">
+                    <button onclick="showDropdown()" class="dropbtn">Curriculum <svg xmlns="http://www.w3.org/2000/svg"
+                            width="12" height="12" fill="currentColor" class="bi bi-caret-down-fill"
+                            viewBox="0 0 16 16">
+                            <path
+                                d="M7.247 11.14 2.451 5.658C1.885 5.013 2.345 4 3.204 4h9.592a1 1 0 0 1 .753 1.659l-4.796 5.48a1 1 0 0 1-1.506 0z" />
+                        </svg>
+                    </button>
+                    <div id="Dropdown" class="dropdown-content">
+                        <a href="CYSE201S.html">CYSE 201S</a>
+                        <a href="CYSE200T.html">CYSE 200T</a>
+                    </div>
+                </li>
+            </ul>
+        </nav>
+    </header>
+
+    <section class="about-main-container">
+        <div class="large-text bold primary-text">Work in progress.</div>
+    </section>
+</body>
+
+</html>
