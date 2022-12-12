@@ -7,6 +7,7 @@
 }
 
 
+
 html, body {
     margin: 0;
     padding: 0;
@@ -124,6 +125,8 @@ nav a:hover {
     display: block;
 }
 
+/* Home page */
+
 #home-intro {
     width: 100%;
     height: 75%;
@@ -225,24 +228,117 @@ nav a:hover {
 
 /* About Me page */
 
-.about-main-container {
+.about-heading {
+    text-align: center;
+    padding-bottom: 10%;
+}
+
+.about-primary-container {
     display: grid;
     place-items: center;
     align-content: center;
-    min-height: 90%;
+    min-height: 110vh;
 }
+
+.about-primary-container ul {
+    list-style: none;
+    text-align: center;
+    padding: 0;
+}
+
+.about-primary-container img {
+    width: 100px;
+    height: 60px;
+}
+
+.about-primary-year {
+    font-size: 2em;
+    margin-bottom: 10px;
+}
+
+.about-primary-caption {
+    margin-top: 5px;
+    padding-left: 3px;
+}
+
 
 /* Resume page */
 
-.resume-main-container {
-    /* Change all of this. */
+#resume-education {
+    margin-top: 50%;
+}
+
+.resume-primary-container {
     display: grid;
+    grid-template-columns: 200px 175px;
     place-items: center;
-    align-content: center;
-    min-height: 90%;
+    align-items: center;
+}
+
+.resume-primary-container ul {
+    list-style: none;
+    padding-left: 5px;
+}
+
+.resume-primary-container p {
+    margin: 0;
+    padding: 0;
+}
+
+.resume-primary-container a {
+    color: white;
+}
+
+.resume-secondary-container {
+    display: grid;
+    grid-template-columns: 1fr;
+}
+
+.resume-secondary-container ul {
+    list-style: none;
+    padding-left: 5px;
+}
+
+.resume-secondary-container p {
+    margin: 0;
+    padding: 0;
+}
+
+.resume-heading {
+    margin: 0;
+    padding-left: 5px;
+    font-size: 2em;
+    background-color: white;
+    color: black;
+}
+
+.resume-sub-heading {
+    text-decoration: underline;
+    margin-bottom: 5px;
+}
+
+.list-item {
+    list-style: disc;
+    margin-left: 15px;
+}
+
+.wide-img {
+    width: 150px;
+    height: 100px;
+}
+
+.badge-img {
+    width: 100px;
+    height: 100px;
+}
+
+#ncl-cert {
+    width: 150px;
+    height: 100px;
 }
 
 @media screen and (min-width: 900px) {
+    /* Navbar */
     header {
         display: flex;
         flex-direction: row;
@@ -300,10 +396,99 @@ nav a:hover {
         margin-left: 21px;
         margin-right: 21px;
     }
+
+    /* Resume page */
+    .resume-heading {
+        margin: 0;
+        font-size: 2.5em;
+        padding-left: 0.5%;
+        padding-top: 1%;
+    }
+
+    .resume-sub-heading {
+        font-size: 2em;
+    }
+
+    #resume-education {
+        margin-top: 2%;
+    }
+
+    .resume-primary-container {
+        grid-template-columns: 50% 50%;
+        align-items: center;
+        padding-top: 1%;
+        padding-left: 2%;
+        margin-bottom: 2%;
+    }
+
+    .resume-primary-container ul {
+        margin: 0;
+        width: 100%;
+    }
+
+    .resume-secondary-container {
+        margin: 0;
+        padding-top: 1%;
+        padding-left: 2%;
+        margin-bottom: 2%;
+    }
+
+    .resume-secondary-container ul {
+        margin: 0;
+        padding: 0;
+        width: 100%;
+    }
+
+    .wide-img {
+        width: 250px;
+        height: 100px;
+    }
+
+    .badge-img {
+        width: 150px;
+        height: 150px;
+    }
+
+    #ncl-cert {
+        width: 300px;
+        height: 200px;
+    }
+
+    .list-item {
+        margin-left: 75px;
+    }
+
+    /* About page */
+
+    .about-heading {
+        font-size: 3em;
+    }
+
+    .about-primary-year {
+        font-size: 3em;
+        margin-bottom: 10px;
+    }
+    
+    .about-primary-caption {
+        margin-top: 5px;
+        padding-left: 5px;
+    }
+    
 }
-
-
 
 .show {
     display: block;
+}
+
+.anim-slide {
+    opacity: 0;
+    filter: blur(5px);
+    transform: translateX(-100%);
+    transition: all 1.5s;
+}
+
+.show-slide {
+    opacity: 1;
+    filter: blur(0);
+    transform: translateX(0);
 }
