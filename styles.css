@@ -4,6 +4,13 @@
     --darkgrey: #151515;
     --yellow: #F3E600;
     --bold: 900;
+
+    --starwhite: #f4f5f7;
+    --starmaroon: #c72138;
+    --starorange: #e06236;
+    --stargold: #d7a64b;
+    --starnavy: #304c7a;
+
 }
 
 
@@ -13,12 +20,13 @@ html, body {
     padding: 0;
     width: 100%;
     height: 100%;
-    background-color: var(--darkgrey);
+    background: var(--starwhite);
 }
 
 .primary-text {
-    color: white;
+    color: black;
     font-family: 'Inter', sans-serif;
+    font-weight: var(--bold);
 }
 
 .large-text {
@@ -41,9 +49,8 @@ html, body {
 header {
     text-align: center;
     width: 100%;
-    height: 5%;
+    height: 3.5%;
 }
-
 .logo {
     display: flex;
     justify-content: center;
@@ -53,7 +60,7 @@ header {
 
 .logo a {
     text-decoration: none;
-    color: white;
+    color: black;
     font-family: 'Inter', sans-serif;
     font-weight: 700;
     font-size: 1.5rem;
@@ -80,10 +87,10 @@ nav li {
 }
 
 nav a {
-    color: white;
+    color: black;
     text-decoration: none;
     font-family: 'Inter', sans-serif;
-    font-weight: 400;
+    font-weight: var(--bold);
     font-size: 1.2rem;
 }
 
@@ -97,11 +104,12 @@ nav a:hover {
 }
 
 .dropbtn {
-    background-color: var(--darkgrey);
+    background-color: var(--starwhite);
     border: none;
-    color: white;
+    color: black;
     font-size: 1.2rem;
     font-family: 'Inter', sans-serif;
+    font-weight: var(--bold);
     text-align: center;
     cursor: pointer;
 }
@@ -113,7 +121,7 @@ nav a:hover {
 .dropdown-content {
     display: none;
     position: absolute;
-    background-color: white;
+    background-color: var(--stargold);
     min-width: 120px;
     z-index: 1;
 }
@@ -123,6 +131,11 @@ nav a:hover {
     padding: 8px 8px;
     text-decoration: none;
     display: block;
+}
+
+.dropdown-content a:hover {
+    background-color: var(--starnavy);
+    color: var(--starwhite);
 }
 
 /* Home page */
@@ -154,18 +167,6 @@ nav a:hover {
     height: 20%;
 }
 
-.contact-container p {
-    border-bottom: white 1px solid;
-}
-
-.contact-container a {
-    opacity: 75%;
-}
-
-.contact-container a:hover {
-    opacity: 100%;
-}
-
 /* ASSIGNMENTS STYLING */
 
 .class-container {
@@ -176,7 +177,7 @@ nav a:hover {
 
 .class-title {
     text-align: center;
-    color: white;
+    color: black;
     font-size: 2em;
 }
 
@@ -192,7 +193,7 @@ nav a:hover {
 
 .assignment-dropbtn:hover {
     text-decoration: underline;
-    background-color: var(--yellow);
+    background-color: var(--stargold);
 }
 
 .assignment-dropbtn svg {
@@ -213,7 +214,7 @@ nav a:hover {
 }
 
 .assignment-title {
-    color: white;
+    color: var(--starmaroon);
 }
 
 .assignment-container img {
@@ -261,6 +262,36 @@ nav a:hover {
     padding-left: 3px;
 }
 
+/* set arrow positioning */
+.arrow {
+	width: 60px;
+	height: 82px;
+	position: absolute; /* don't forget set container to relative */
+	margin-left: 0px;
+	bottom: 5%;
+  z-index:999;
+}
+
+/* set arrow styles */
+/* Code by: https://codepen.io/7mirnoff*/
+.arrow path {
+	stroke: var(--starnavy);
+	stroke-width: 2px;
+	fill: transparent;	
+	animation: down 2s infinite;
+}
+/* arrow keyframe animation */
+@keyframes down{
+0% { opacity:0 }
+25% { opacity:1 }
+75% { opacity:0 }
+100% { opacity:0 }
+}
+/* arrow animation delay */
+.arrow path.a1{	animation-delay:-1s; }
+.arrow path.a2{	animation-delay:-.5s; }
+.arrow path.a3{	animation-delay:0s; }
+
 
 /* Resume page */
 
@@ -286,7 +317,7 @@ nav a:hover {
 }
 
 .resume-primary-container a {
-    color: white;
+    color: var(--starnavy);
 }
 
 .resume-secondary-container {
@@ -308,8 +339,7 @@ nav a:hover {
     margin: 0;
     padding-left: 5px;
     font-size: 2em;
-    background-color: white;
-    color: black;
+    color: var(--starwhite);
 }
 
 .resume-sub-heading {
@@ -371,7 +401,7 @@ nav a:hover {
 
     #home-text {
         padding: 100px;
-        border-right: white solid 1px;
+        border-right: black solid 1px;
     }
 
     #home-logo {
@@ -474,6 +504,9 @@ nav a:hover {
         padding-left: 5px;
     }
     
+    .arrow {
+        left: 49%;
+    }
 }
 
 .show {
