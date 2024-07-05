@@ -13,14 +13,14 @@
 
 <body>
     <header>
-        <div class="logo"><a href="https://natecybersec.github.io/">Nathaniel Carter | Portfolio</a></div>
+        <div class="logo"><a href="https://natecybersec.github.io/">NATHANIEL CARTER | PORTFOLIO</a></div>
         <nav>
             <ul>
-                <li><a href="about.html">About Me</a></li>
-                <li><a href="resume.html">Resume</a></li>
+                <li class="navbarListItem"><a href="about.html" style="font-size: 1.75rem;">>ABOUT ME<</a></li>
+                <li class="navbarListItem"><a href="resume.html" style="font-size: 1.75rem;">RESUME</a></li>
                 <li class="dropdown">
-                    <button onclick="showDropdown()" class="dropbtn">Curriculum <svg xmlns="http://www.w3.org/2000/svg"
-                            width="12" height="12" fill="currentColor" class="bi bi-caret-down-fill"
+                    <button onclick="showDropdown()" class="dropbtn" style="font-size: 1.75rem;">CURRICULUM <svg xmlns="http://www.w3.org/2000/svg"
+                            width="14" height="14" fill="currentColor" class="bi bi-caret-down-fill"
                             viewBox="0 0 16 16">
                             <path
                                 d="M7.247 11.14 2.451 5.658C1.885 5.013 2.345 4 3.204 4h9.592a1 1 0 0 1 .753 1.659l-4.796 5.48a1 1 0 0 1-1.506 0z" />
@@ -34,101 +34,31 @@
             </ul>
         </nav>
     </header>
-
-    <div class="about-primary-container">
-        <h1 class="about-heading primary-text bold">Scroll to learn about me.</h1>
-        <svg class="arrow">
-            <path class="a1" d="M0 0 L30 22 L60 0"></path>
-            <path class="a2" d="M0 20 L30 42 L60 20"></path>
-            <path class="a3" d="M0 40 L30 62 L60 40"></path>
-        </svg>
-    </div>
-
-    <section class="anim-slide">
-        <div class="about-primary-container">
-            <ul>
-                <li class="about-primary-year primary-text bold">2001 // Sterling, Virginia.</li>
-                <li class="about-primary-flag"><img
-                        src="https://upload.wikimedia.org/wikipedia/en/thumb/a/a4/Flag_of_the_United_States.svg/320px-Flag_of_the_United_States.svg.png"
-                        alt="Flag of the United States of America."></li>
-                <li class="about-primary-caption primary-text">The year I was born. I lived here until I was about 3
-                    years old.</li>
-            </ul>
+    <section>
+        <div id="about-me-pic-wrapper">
+            <img src="images/headshot_filtered.png" alt="Picture of me." id="about-me-pic">
         </div>
     </section>
-
-    <section class="anim-slide">
-        <div class="about-primary-container">
-            <ul>
-                <li class="about-primary-year primary-text bold">2004 // Tirana, Albania.</li>
-                <li class="about-primary-flag"><img
-                        src="https://upload.wikimedia.org/wikipedia/commons/thumb/3/36/Flag_of_Albania.svg/320px-Flag_of_Albania.svg.png"
-                        alt="Flag of Albania."></li>
-                <li class="about-primary-caption primary-text">My family and I moved to Albania, due to my parent's
-                    work. I don't remember much about Albania, probably because I was so young at the time.</li>
-            </ul>
+    <section>
+        <div id="about-me-text-wrapper">
+            <p id="about-me-text" class="primary-text">
+                Hello, and welcome to my portfolio! I designed this website myself, in an effort to learn 
+                more about HTML, CSS, and JavaScript.
+                I'm an aspiring cybersecurity specialist currently attending Old Dominion University. <br>
+                Ever since I was a kid, I've been interested in technology and learning how 
+                things like computers work, and this ended up heavily influencing my choice of a career 
+                in cybersecurity. <br>
+                My employment experience ranges from working in retail to contracting for the federal
+                government, and a common pattern I have noticed so far is that working as a team is
+                essential to operating effectively. <br>
+                As for my personal life, you'll find me watching YouTube videos covering a wide variety
+                of topics, reading a book, catching up on a TV show, or playing a video game. <br>
+                The best options for contacting me are on the home page, should you want to reach me. Thanks! <br>
+                - <span style="font-weight: var(--bold);">Nathan</span>
+            </p>
         </div>
     </section>
-
-    <section class="anim-slide">
-        <div class="about-primary-container">
-            <ul>
-                <li class="about-primary-year primary-text bold">2006 // Manama, Bahrain.</li>
-                <li class="about-primary-flag"><img
-                        src="https://upload.wikimedia.org/wikipedia/commons/thumb/2/2c/Flag_of_Bahrain.svg/320px-Flag_of_Bahrain.svg.png"
-                        alt="Flag of Bahrain."></li>
-                <li class="about-primary-caption primary-text">We left Albania and moved to Bahrain. I also don't
-                    remember a whole lot about Bahrain, but I do recall having a favourite spot to get chicken.</li>
-            </ul>
-        </div>
-    </section>
-
-    <section class="anim-slide">
-        <div class="about-primary-container">
-            <ul>
-                <li class="about-primary-year primary-text bold">2008 // Amman, Jordan.</li>
-                <li class="about-primary-flag"><img
-                        src="https://upload.wikimedia.org/wikipedia/commons/thumb/c/c0/Flag_of_Jordan.svg/320px-Flag_of_Jordan.svg.png"
-                        alt="Flag of Jordan."></li>
-                <li class="about-primary-caption primary-text">Moving to Jordan is the part farthest back in my past that I can remember most. 
-                    Jordan holds a lot of the building blocks of my life, along with being one of the greatest countries I've lived in.
-                    The school that I attended was called "ACS", which stands for "American Community School". I met one of my best friends who I still
-                    hang out with today, in Jordan at ACS. Also around this time is when I first remember discovering and being active on the internet.
-                    My favorite website was called YouTube, a video-hosting website that had came out a couple years earlier but was 
-                    just starting to take off. I also remember frequenting flash game sites, which is where a passion for game development started to grow.</li>
-            </ul>
-        </div>
-    </section>
-
-    <section class="anim-slide">
-        <div class="about-primary-container">
-            <ul>
-                <li class="about-primary-year primary-text bold">2011 // Dhaka, Bangladesh.</li>
-                <li class="about-primary-flag"><img
-                        src="https://upload.wikimedia.org/wikipedia/commons/thumb/f/f9/Flag_of_Bangladesh.svg/320px-Flag_of_Bangladesh.svg.png"
-                        alt="Flag of Bangladesh."></li>
-                <li class="about-primary-caption primary-text">Bangladesh is also a very important place to me. The school that I attended was extremely nice, 
-                    and I made a lot of great friends while I was there. I also became increasingly interested in computers and how they were built.
-                    I made plans to build my own at some point.</li>
-            </ul>
-        </div>
-    </section>
-
-    <section class="anim-slide">
-        <div class="about-primary-container">
-            <ul>
-                <li class="about-primary-year primary-text bold">2014 // Winchester, Virginia.</li>
-                <li class="about-primary-flag"><img
-                        src="https://upload.wikimedia.org/wikipedia/en/thumb/a/a4/Flag_of_the_United_States.svg/320px-Flag_of_the_United_States.svg.png"
-                        alt="Flag of the United States of America."></li>
-                <li class="about-primary-caption primary-text">Winchester has been my home since 2014. Here I graduated middle school, high school, 
-                    and college with an AAS degree. Hopefully soon, I will also have my BAS.</li>
-            </ul>
-        </div>
-    </section>
-
     
 
 </body>
-
 </html>
